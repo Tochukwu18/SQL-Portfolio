@@ -1,6 +1,12 @@
 'proof that table successfully imported'
 show tables in portfolio
 
+'data type for date columns is Text'
+describe supermarket
+
+'insert new columns for date'
+alter table supermarket add column new_date date
+
 'checking all columns in dataset and creating indexes to help retrieve data from table faster'
 select * from supermarket;
 create index i_quantity on supermarket (quantity)
